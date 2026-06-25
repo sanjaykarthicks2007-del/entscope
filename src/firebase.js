@@ -5,12 +5,12 @@ import { getAuth } from 'firebase/auth'
 // PASTE YOUR FIREBASE CONFIG HERE
 // Go to Firebase Console → Project Settings → Your Apps → </> Web → Copy config
 const firebaseConfig = {
-  apiKey: "AIzaSyAHSaiFEx3gAcsjcIJwUR72PB81UbPgmr8",
-  authDomain: "ent-scope.firebaseapp.com",
-  projectId: "ent-scope",
-  storageBucket: "ent-scope.firebasestorage.app",
-  messagingSenderId: "719337292955",
-  appId: "1:719337292955:web:ef2d80fc7dcb0c61a0f23e"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 }
 
 const app = initializeApp(firebaseConfig)
